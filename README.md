@@ -1,5 +1,34 @@
 # BHT_URBAN_TECH
 
+
+Für Präsentation:
+
+
+Problemlstellung in Powerpoint:
+Roter Faden!
+Ausgangsfrage --> Problem --> Goal
+
+Feateaus --> Einflussfaktoren --> dass wir dies im bestenfall beinflussen können
+
+SHAP:
+* nur einfach erklärung; was bedeuten niedrige werter.
+* Auf basis von einzelpunkte, können aber auch zu Gruppen zusammengefasst werden
+
+Modell Qualität:
+* Confusion Matrix
+* Hoher wert auf der diagonalen
+* F1 score
+
+
+Erklärung in Streamlit
+
+* Beschriftung der Diagramme Ändern! (Große FOnt size und nicht KDE, sondern für den Kunde verständlich)
+* Nutzen Slide: was sind direkte Punkte welche sie ableiten können
+
+
+
+
+
 The data is not included in the github. You can download it at the following links:
 London Boroughs boundaries: https://skgrange.github.io/data.html 
 UK Traffic Accidents: https://www.kaggle.com/datasets/tsiaras/uk-road-safety-accidents-and-vehicles?select=Vehicle_Information.csv
