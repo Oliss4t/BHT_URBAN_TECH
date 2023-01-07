@@ -1,67 +1,18 @@
 # BHT_URBAN_TECH
 
-
-Für Präsentation:
-
-
-Problemlstellung in Powerpoint:
-Roter Faden!
-Ausgangsfrage --> Problem --> Goal
-
-Feateaus --> Einflussfaktoren --> dass wir dies im bestenfall beinflussen können
-
-SHAP:
-* nur einfach erklärung; was bedeuten niedrige werter.
-* Auf basis von einzelpunkte, können aber auch zu Gruppen zusammengefasst werden
-
-Modell Qualität:
-* Confusion Matrix
-* Hoher wert auf der diagonalen
-* F1 score
-
-
-Erklärung in Streamlit
-
-* Beschriftung der Diagramme Ändern! (Große FOnt size und nicht KDE, sondern für den Kunde verständlich)
-* Nutzen Slide: was sind direkte Punkte welche sie ableiten können
-
-
-
-
+Results are in the powerpoint and streamlit application.
+The jupyter notebook file "main" includes the perprocessing and model creations (Goal 1).
+The jupyter notebook file "shap" includes the creating of the SHAP values and explainability (Goal 2).
+The jupyter notebook file "plotting" includes the creating of geomap.
 
 The data is not included in the github. You can download it at the following links:
 London Boroughs boundaries: https://skgrange.github.io/data.html 
 UK Traffic Accidents: https://www.kaggle.com/datasets/tsiaras/uk-road-safety-accidents-and-vehicles?select=Vehicle_Information.csv
 LOAS: https://data.london.gov.uk/dataset/lsoa-atlas
 
+#### Business Question:
+„How can we further reduce the serious traffic accidents in London? -
+We did already simple data analysis but couldn’t find interesting insights.“
 
-Customer Question:
-Increase in traffic accidents... find source
-
-What drives the severity of traffic accidents?
-What can we do to work against it? What are the leverages? 
-
-* check data types
-* restrict to london
-* handling missing values
-* feature engineering and only use relevant columns
-
-* like many other permutation-based interpretation methods, the Shapley value method suffers from inclusion of unrealistic data instances when features are correlated
-* The Shapley value returns a simple value per feature, but no prediction model like LIME. This means it cannot be used to make statements about changes in prediction for changes in the input, such as: “If I were to earn €300 more a year, my credit score would increase by 5 points.”
-
-* Exploratory Data Analysis
-* visualize
-* clustering on data
-
-* build classification model for severtity prediction
-* LIME and SHAP
-* SHAP feature importance
-* SHAP Summary Plot -->  first indications of the relationship between the value of a feature and the impact on the prediction
-* SHAP Dependence Plot --> SHAP feature dependence detailed
-* SHAP Interaction Values
-* Clustering Shapley Values --> cluster instances by explanation similarity
-* shap values on outlier
-* average shap values on class, the most important factors for the serverity class 
-
-* create beautiful vizualization
-* streamlit app
+#### Question to Answer via ML approach:
+„What features are important to classify a traffic accident as serious?“

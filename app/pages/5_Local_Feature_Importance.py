@@ -16,7 +16,7 @@ number = st.sidebar.number_input('Choose sample to create local feature importan
 
 st.write('The current sample is ', number)
 st.write(
-    """Waterfall plots are designed to display explanations for individual predictions, so they expect a single row of an Explanation object as input. The bottom of a waterfall plot starts as the expected value of the model output, and then each row shows how the positive (red) or negative (blue) contribution of each feature moves the value from the expected model output over the background dataset to the model output for this prediction."""
+    """Waterfall plots are designed to display explanations for individual predictions, so they expect a single row of an Explanation object as input. The bottom of a waterfall plot starts as the expected value of the model output, and then each row shows how the positive (**red, Serious or Fatal**) or negative (**blue, Slight**) contribution of each feature moves the value from the expected model output over the background dataset to the model output for this prediction."""
 )
 
 
